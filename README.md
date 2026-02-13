@@ -129,7 +129,44 @@ To receive WhatsApp messages, you must expose your local backend to the internet
     *   **Verify Token**: `my_secure_token` (from your .env)
     *   Verify and Save.
 
-## 🔐 Credentials
+## � Alternative: Run Manually (No Docker)
+
+If you cannot run Docker, you can run services locally.
+
+### 1. Requirements
+*   PostgreSQL running locally (`brew services start postgresql`).
+*   Redis running locally (`brew services start redis`).
+*   Python 3.11+ and Node.js 18+.
+
+### 2. Configure Backend
+Update `.env` to use localhost:
+```ini
+DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/smart_lawyer
+OLLAMA_BASE_URL=http://localhost:11434/v1
+```
+
+### 3. Run Backend
+```bash
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+# Install greenlet for async support
+pip install greenlet
+# Run Migrations
+alembic upgrade head
+# Start Server
+uvicorn app.main:app --reload --port 8000
+```
+
+### 4. Run Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## �🔐 Credentials
 
 *   **Dashboard Login**: `user@example.com` (Registration pending implementation, currently mocked for demo access).
 *   **Database**: `postgres` / `postgres`.

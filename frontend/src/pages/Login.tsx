@@ -21,7 +21,7 @@ const Login: React.FC = () => {
             formData.append('username', email);
             formData.append('password', password);
 
-            const response = await api.post('/login/access-token', formData, {
+            const response = await api.post('/login/login/access-token', formData, {
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
             });
 

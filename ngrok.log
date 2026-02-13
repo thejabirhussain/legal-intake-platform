@@ -1,10 +1,25 @@
-t=2026-02-13T17:11:14+0530 lvl=info msg="no configuration paths supplied"
-t=2026-02-13T17:11:14+0530 lvl=info msg="ignoring default config path, could not stat it" path="/Users/shaikmohammedjabirhussain/Library/Application Support/ngrok/ngrok.yml"
-t=2026-02-13T17:11:14+0530 lvl=info msg="FIPS 140 mode" enabled=false
-t=2026-02-13T17:11:14+0530 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
-t=2026-02-13T17:11:16+0530 lvl=eror msg="failed to reconnect session" obj=tunnels.session err="authentication failed: Usage of ngrok requires a verified account and authtoken.\n\nSign up for an account: https://dashboard.ngrok.com/signup\nInstall your authtoken: https://dashboard.ngrok.com/get-started/your-authtoken\r\n\r\nERR_NGROK_4018\r\n"
-t=2026-02-13T17:11:16+0530 lvl=eror msg="session closing" obj=tunnels.session err="authentication failed: Usage of ngrok requires a verified account and authtoken.\n\nSign up for an account: https://dashboard.ngrok.com/signup\nInstall your authtoken: https://dashboard.ngrok.com/get-started/your-authtoken\r\n\r\nERR_NGROK_4018\r\n"
-t=2026-02-13T17:11:16+0530 lvl=info msg="received stop request" obj=app stopReq="{err:{Remote:true Inner:{Inner:0x14000054760}} restart:false}"
-t=2026-02-13T17:11:16+0530 lvl=eror msg="terminating with error" obj=app err="authentication failed: Usage of ngrok requires a verified account and authtoken.\n\nSign up for an account: https://dashboard.ngrok.com/signup\nInstall your authtoken: https://dashboard.ngrok.com/get-started/your-authtoken\r\n\r\nERR_NGROK_4018\r\n"
-t=2026-02-13T17:11:16+0530 lvl=crit msg="command failed" err="authentication failed: Usage of ngrok requires a verified account and authtoken.\n\nSign up for an account: https://dashboard.ngrok.com/signup\nInstall your authtoken: https://dashboard.ngrok.com/get-started/your-authtoken\r\n\r\nERR_NGROK_4018\r\n"
-t=2026-02-13T17:11:16+0530 lvl=info msg="no more state changes" obj=tunnels.session
+t=2026-02-13T22:51:42+0530 lvl=info msg="no configuration paths supplied"
+t=2026-02-13T22:51:42+0530 lvl=info msg="using configuration at default config path" path="/Users/shaikmohammedjabirhussain/Library/Application Support/ngrok/ngrok.yml"
+t=2026-02-13T22:51:42+0530 lvl=info msg="open config file" path="/Users/shaikmohammedjabirhussain/Library/Application Support/ngrok/ngrok.yml" err=nil
+t=2026-02-13T22:51:42+0530 lvl=info msg="FIPS 140 mode" enabled=false
+t=2026-02-13T22:51:42+0530 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+t=2026-02-13T22:51:42+0530 lvl=info msg="client session established" obj=tunnels.session
+t=2026-02-13T22:51:42+0530 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2026-02-13T22:51:43+0530 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:8000 url=https://2e4a-2405-201-c056-4024-6df5-2ebe-a399-1a0c.ngrok-free.app
+t=2026-02-13T23:10:04+0530 lvl=info msg=start pg=/status id=5559525c73921eb3
+t=2026-02-13T23:10:04+0530 lvl=info msg=end pg=/status id=5559525c73921eb3 status=200 dur=3.270167ms
+t=2026-02-13T23:10:04+0530 lvl=info msg=start pg=/static/css/app.DttJnHmJ.css id=14efebf7a4f731c1
+t=2026-02-13T23:10:04+0530 lvl=info msg=start pg=/static/js/app.DzFqJQXQ.js id=e1d7a0ef8d17d790
+t=2026-02-13T23:10:04+0530 lvl=info msg=end pg=/static/css/app.DttJnHmJ.css id=14efebf7a4f731c1 status=200 dur=18.12ms
+t=2026-02-13T23:10:04+0530 lvl=info msg=end pg=/static/js/app.DzFqJQXQ.js id=e1d7a0ef8d17d790 status=200 dur=21.838916ms
+t=2026-02-13T23:10:04+0530 lvl=info msg=start pg=/grpc/agent.Web/Preloaded id=d02955c00bd15308
+t=2026-02-13T23:10:04+0530 lvl=info msg=start pg=/grpc/agent.Web/State id=1d23a577e10c1848
+t=2026-02-13T23:10:04+0530 lvl=info msg=end pg=/grpc/agent.Web/Preloaded id=d02955c00bd15308 status=200 dur=11.932125ms
+t=2026-02-13T23:10:05+0530 lvl=info msg=start pg=/static/favicon.ico id=1f36a929e65535db
+t=2026-02-13T23:10:05+0530 lvl=info msg=end pg=/static/favicon.ico id=1f36a929e65535db status=200 dur=231µs
+t=2026-02-13T23:10:05+0530 lvl=info msg=start pg=/static/favicon.ico id=1646bf168e9b8f47
+t=2026-02-13T23:10:05+0530 lvl=info msg=end pg=/static/favicon.ico id=1646bf168e9b8f47 status=200 dur=83.209µs
+t=2026-02-13T23:15:47+0530 lvl=info msg=start pg=/static/favicon.ico id=832f19009584f23b
+t=2026-02-13T23:15:47+0530 lvl=info msg=end pg=/static/favicon.ico id=832f19009584f23b status=304 dur=1.359458ms
+t=2026-02-14T00:01:33+0530 lvl=info msg=start pg=/static/favicon.ico id=73f88837bd766aa6
+t=2026-02-14T00:01:33+0530 lvl=info msg=end pg=/static/favicon.ico id=73f88837bd766aa6 status=304 dur=6.008542ms
