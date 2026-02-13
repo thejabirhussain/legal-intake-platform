@@ -11,18 +11,18 @@ The system follows a modern microservices-inspired architecture, separating the 
 
 ```mermaid
 graph TD
-    User([Client User]) -- WhatsApp --> MetaAPI[Meta Cloud API]
-    MetaAPI -- Webhook --> Backend[FastAPI Backend]
+    User(["Client User"]) -- WhatsApp --> MetaAPI["Meta Cloud API"]
+    MetaAPI -- Webhook --> Backend["FastAPI Backend"]
     
     subgraph "Backend Core"
-        Backend -- Process --> Agent[Intake Agent]
-        Agent -- Use --> LLM[LLM Service (OpenAI/Ollama)]
-        Agent -- Store/Fetch --> DB[(PostgreSQL)]
-        Agent -- Context --> Redis[(Redis Cache)]
+        Backend -- Process --> Agent["Intake Agent"]
+        Agent -- Use --> LLM["LLM Service (OpenAI/Ollama)"]
+        Agent -- Store/Fetch --> DB[("PostgreSQL")]
+        Agent -- Context --> Redis[("Redis Cache")]
     end
     
     subgraph "Frontend Dashboard"
-        Lawyer([Lawyer/Admin]) -- HTTPS --> ReactApp[React Dashboard]
+        Lawyer(["Lawyer/Admin"]) -- HTTPS --> ReactApp["React Dashboard"]
         ReactApp -- API REST --> Backend
     end
     
